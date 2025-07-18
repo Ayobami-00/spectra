@@ -8,6 +8,36 @@ services:
     ports:
       - "8080:8080"
     depends_on:
+      - assistant_base
+      - assistant_agent
+      - postgres
+      - redis
+    env_file:
+      - .env
+    networks:
+      - spectra
+
+  assistant_base:
+    build:
+      context: ../../assistant
+      dockerfile: assistant.base.dockerfile
+    ports:
+      - "8085:8085"
+    depends_on:
+      - postgres
+      - redis
+    env_file:
+      - .env
+    networks:
+      - spectra
+
+  assistant_agent:
+    build:
+      context: ../../assistant
+      dockerfile: assistant.agent.dockerfile
+    ports:
+      - "5005:5005"
+    depends_on:
       - postgres
       - redis
     env_file:
