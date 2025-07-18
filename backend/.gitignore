@@ -1,0 +1,6 @@
+*.log
+.vscode
+
+app.env
+
+dev.env
