@@ -1,4 +1,4 @@
-# Spectra (fka. Assignme)
+# Spectra (fka. AssignMe)
 
 [**View Demo**](https://drive.google.com/file/d/1Hz7wnh9GNcnVZ3yeBZV4jOxeRr8N_jI7/view?usp=sharing)
 
@@ -26,10 +26,10 @@ The project follows a microservices architecture:
 | ----------------- | -------------------------------------------------- |
 | **Frontend**      | Flutter, Dart, Nginx                               |
 | **Backend**       | Go                                                 |
-| **Assistant**     | Python (specific framework, e.g., Rasa, not specified) |
+| **Assistant**     | Python (FastAPI) |
 | **Database**      | PostgreSQL                                         |
 | **Cache**         | Redis                                              |
-| **Containerization**| Docker, Docker Compose                             |
+| **Containerization**| Docker, Docker Compose                           |
 
 ## Getting Started
 
