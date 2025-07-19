@@ -82,6 +82,7 @@ The `docker-compose.yml` file orchestrates the following services:
 | `frontend`        | Nginx server for the Flutter web app              | `8000:80`                      |
 | `backend`         | Go API server                                     | `8080:8080`                    |
 | `assistant_agent` | Python AI assistant service                       | `5005:5005`                    |
+| `assistant_base`  | Python AI assistant service                       | `8085:8085`                    |
 | `postgres`        | PostgreSQL database                               | `5432:5432`                    |
 | `redis`           | Redis in-memory data store                        | `6379:6379`                    |
 
