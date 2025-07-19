@@ -1,1 +1,1 @@
-# assignme-v3-assistants
+# frontend-v3-assistants

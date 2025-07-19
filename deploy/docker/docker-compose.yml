@@ -45,6 +45,31 @@ services:
     networks:
       - spectra
 
+  frontend:
+    build:
+      context: ../../frontend
+      dockerfile: Dockerfile
+      args:
+        - BASE_API_URL=${BASE_API_URL}
+        - ASSISTANT_API_URL=${ASSISTANT_API_URL}
+        - ASSISTANT_API_KEY=${ASSISTANT_API_KEY}
+        - SENTRY_DSN=${SENTRY_DSN}
+        - SENTRY_TRACE_SAMPLE_RATE=${SENTRY_TRACE_SAMPLE_RATE}
+        - ASSISTANT_SUPERADMIN_API_EMAIL=${ASSISTANT_SUPERADMIN_API_EMAIL}
+        - ASSISTANT_SUPERADMIN_API_PASSWORD=${ASSISTANT_SUPERADMIN_API_PASSWORD}
+        - WS_URL=${WS_URL}
+        - LIVEKIT_URL=${LIVEKIT_URL}
+        - AMPLITUDE_API_KEY=${AMPLITUDE_API_KEY}
+        - AMPLITUDE_PROJECT=${AMPLITUDE_PROJECT}
+    ports:
+      - "8000:80"
+    depends_on:
+      - backend
+    env_file:
+      - .env
+    networks:
+      - spectra
+
   postgres:
     image: postgres:14-alpine
     environment:

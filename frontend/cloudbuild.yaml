@@ -1,0 +1,8 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us-east1-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}', '.' ]
+images:
+- '${_LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${_IMAGE}'
+
+# /Users/enfinity/Downloads/google-cloud-sdk/bin/gcloud builds submit --config=cloudbuild.yaml --substitutions=_LOCATION="us-east1",_REPOSITORY="frontend-images",_IMAGE="frontend-web-v3"
+# /Users/enfinity/Downloads/google-cloud-sdk/bin/gcloud run deploy frontend-web-v3 --image us-east1-docker.pkg.dev/frontend-445302/frontend-images/frontend-web-v3 --platform managed --region us-central1 --allow-unauthenticated
