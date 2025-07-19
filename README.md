@@ -44,7 +44,7 @@ Follow these instructions to get the project up and running on your local machin
 
 1.  **Clone the repository:**
     ```sh
-    git clone <your-repository-url>
+    git clone git@github.com:Ayobami-00/spectra.git
     cd spectra
     ```
 
