@@ -1,4 +1,4 @@
-# Spectra
+# Spectra (fka. Assignme)
 
 [**View Demo**](https://drive.google.com/file/d/1Hz7wnh9GNcnVZ3yeBZV4jOxeRr8N_jI7/view?usp=sharing)
 
