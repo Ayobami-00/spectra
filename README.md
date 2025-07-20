@@ -1,6 +1,6 @@
 # Spectra (fka. AssignMe)
 
-[**View Demo**](https://drive.google.com/file/d/1Hz7wnh9GNcnVZ3yeBZV4jOxeRr8N_jI7/view?usp=sharing)
+[**View Demo**](https://drive.google.com/file/d/1NaLoE2SotzJu6loyCyyXa5bTpMVsbxUi/view?usp=sharing)
 
  ![Spectra Companion Mode](https://drive.google.com/uc?export=view&id=1A_NXQt1Ug5LmY0dB3x95AgQKkifybEU2)
 
